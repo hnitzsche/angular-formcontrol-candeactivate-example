@@ -1,0 +1,9 @@
+<h4>Component with form</h4>
+<div>
+  Form Field
+  <input type="text" [formControl]="inputText" />
+</div>
+<div>
+  I saved the form.
+  <input #formSaved type="checkbox" (change)="checkboxChanged(formSaved.checked)" />
+</div>
